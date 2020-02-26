@@ -1,12 +1,27 @@
 import React from 'react'
 import Title from './Title.js'
 import Form from './Form.js'
+import List from './List.js'
 
-const App = (props) => {
+const App = () => {
   return (
     <div>
-      <Title content={'TodoApp'} />
-      <Form />
+      <div>
+        <Title content={'TodoApp'} />
+      </div>
+      <div>
+        <Form imput={
+          <form method="POST">
+            名前:<input type="text" name="name" />
+          </form>
+        }/>
+      </div>
+      <div>
+        <List 
+          item1={'item1です'}
+          item2={'item2です'}
+        />
+      </div>
     </div>
   )
 }
