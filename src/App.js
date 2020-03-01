@@ -13,6 +13,9 @@ const App = () => {
         <Form imput={
           <form method="POST">
             名前:<input type="text" name="name" />
+            <button type="submit" name="送信">
+              <font size="1">送信</font>
+            </button>
           </form>
         }/>
       </div>
